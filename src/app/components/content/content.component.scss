@@ -1,0 +1,19 @@
+.box-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    h1 {
+        flex: 1;
+        color: #fff;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content1 {
+        flex: 1;
+        justify-content: center;
+        padding: 30px;
+    }
+}

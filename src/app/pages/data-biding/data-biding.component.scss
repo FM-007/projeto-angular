@@ -1,0 +1,54 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    .button {
+        margin: 10px;
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        background-color: #71b361;
+    }
+    
+    .button:hover {
+        background-color: #a8eb94;
+    }
+    
+    .img-biding {
+        width: 40%;
+        max-width: 500px;
+        border-radius: 5px;
+    }
+    
+    .position {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #b9c500;
+        color: #494a66;
+        font-size: 30px;
+        width: 300px;
+        height: 300px;
+    }
+    
+    input[type=text] {
+        min-width: 300px;
+        max-width: 300px;
+        height: 30px;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: #ffd0ff;
+        color: #e259de;
+    }
+    
+    .nome {
+        font-size: 30px;
+        color: #e259de;
+    }
+}
+

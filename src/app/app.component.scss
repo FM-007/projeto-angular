@@ -1,0 +1,11 @@
+.app {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    background-color: #090524;
+}
+
+@media (max-width: 768px) {
+    main {
+      grid-template-columns: 100%;
+    }
+  }
