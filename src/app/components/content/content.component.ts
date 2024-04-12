@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DataBidingComponent } from 'src/app/pages/data-biding/data-biding.component';
-import { DiretivasComponent } from 'src/app/pages/diretivas/diretivas.component';
+import { DiretivasEstruturaisNgIfComponent } from 'src/app/pages/diretivas/estruturais/diretivas-estruturais-ngif/diretivas-estruturais-ngif.component';
 
 @Component({
   selector: 'app-content',
@@ -27,7 +27,7 @@ export class ContentComponent implements OnInit {
           this.selectedComponent = DataBidingComponent;
           break;
         case 'direitvas':
-          this.selectedComponent = DiretivasComponent;
+          this.selectedComponent = DiretivasEstruturaisNgIfComponent;
           break;
       }
     });

@@ -1,9 +1,3 @@
 <aside class="menu">
-  <nav>
-    <ul>
-      <li *ngFor="let item of itensMenu">
-        <a routerLink="{{item.rota}}">{{ item.titulo }}</a>
-      </li>
-    </ul>
-  </nav>
+  <p-panelMenu [transitionOptions]="'300ms'" [model]="items" styleClass="menu"></p-panelMenu>
 </aside>

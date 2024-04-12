@@ -1,6 +1,25 @@
+@import './app/pages/todo-list/scss/variaveis.scss';
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+textarea:focus, input:focus, button {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 350px;
+    margin: 50px auto;
 }
