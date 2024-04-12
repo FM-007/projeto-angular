@@ -1,0 +1,69 @@
+main {
+    padding: 10px;
+    color: rgba($color: #fff, $alpha: 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    .product-item {
+        .product-item-content {
+            border: 1px solid var(--surface-d);
+            border-radius: 3px;
+            margin: .3rem;
+            text-align: center;
+            padding: 2rem 0;
+        }
+    
+        .product-image {
+            width: 50%;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
+        }
+    }
+
+
+    // .content {
+    //     display: flex;
+    //     justify-content: center;
+    //     width: 100%;
+
+    //     .box-carousel {
+    //         max-width: 80vw;
+    //         border: 1px solid rgba($color: #fff, $alpha: 0.1);
+    //         flex: initial;
+    //     }
+
+    //     .card {
+    //         display: flex;
+    //         flex-direction: column;
+    //         justify-content: center;
+    //         align-items: center;
+    //         overflow: visible;
+    //         width: 300px;
+    //         padding: 15px;
+    //         margin: 10px;
+    //         border: 1px solid rgba($color: #fff, $alpha: 0.1);
+    //         border-radius: 5px;
+    //     }
+
+    //     .content-span {
+    //         display: flex;
+    //         flex-direction: column;
+
+    //         span {
+    //             margin: 7px 0;
+    //             font-weight: 100;
+    //             letter-spacing: 1.75px;
+    //             // border-bottom: 1px solid rgba($color: #fff, $alpha: 0.1);
+    //         }
+    //     }
+
+    //     .card-footer {
+    //         text-align: center;
+    //     }
+
+    //     .p-card .p-card-body {
+    //         box-shadow: none !important;
+    //     }
+    // }
+}

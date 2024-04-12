@@ -1,0 +1,25 @@
+<div class="box-diretivas">
+    <h1 class="titulo">Diretivas Estruturais - ngFor</h1>
+
+    <div class="box-texto">
+        <h3 class="titulo">Exemplo - Curso Udemy</h3>
+        <ul class="lista">
+            <li *ngFor="let item of list; index as i; even as isEven;" (click)="onClickEventList(i)">
+                [ {{i}} ] - Nome: {{ item.nome }} - Idade: {{ item.idade }} - <span *ngIf="isEven">Index PAR</span>
+            </li>
+        </ul>
+        <p-button label="Click" icon="pi pi-check" iconPos="left" (click)="onClickAddListDoc()"></p-button>
+    </div>
+
+    <div class="box-texto" pRipple>
+        <h3 class="titulo">Exemplo - Documentação</h3>
+        <ng-template ngFor let-item [ngForOf]="listDoc" let-i="index">
+            <ul class="lista">
+                <li (click)="onClickEventList(i)" pRipple>
+                    [ {{i}} ] - Nome: {{ item.nome }} - Idade: {{ item.idade }}
+                </li>
+            </ul>
+        </ng-template>
+        <p-button label="Click" icon="pi pi-check" iconPos="left" (click)="onClickAddListDoc()"></p-button>
+    </div>
+</div>

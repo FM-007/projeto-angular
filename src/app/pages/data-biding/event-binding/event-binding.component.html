@@ -1,0 +1,9 @@
+<main>
+    <h1 class="titulo">Event Binding</h1>
+    <app-cor-fundo (mousemove)="mouseMoveTest($event)" color="#b9c500" title="Event Binding">
+        <div class="position">
+            {{ position.x }} - {{ position.y }}
+        </div>
+        <button pButton class="p-button-success" type="button" label="Event Binding" icon="pi pi-check" iconPos="left" (click)="alertInfo($event)"></button>
+    </app-cor-fundo>
+</main>

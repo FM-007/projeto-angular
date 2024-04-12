@@ -1,0 +1,48 @@
+<main>
+    <h1 class="titulo">Livros da Biblia</h1>
+
+    <!-- <div class="box-carousel" *ngFor="let book of booksBiblia">
+        <div class="card">
+            <div class="content-span">
+                <span>Autor: {{ book.author }}</span>
+                <span>Capitulos: {{ book.chapters }}</span>
+                <span>Grupo: {{ book.group }}</span>
+                <span>Testamento: {{ book.testament }}</span>
+            </div>
+            <ng-template pTemplate="footer">
+                <div class="card-footer">
+                    <button pButton pRipple type="button" icon="pi pi-bookmark"
+                        class="p-button-rounded p-button-secondary"></button>
+                </div>
+            </ng-template>
+        </div>
+    </div> -->
+
+    <div class="content">
+        <p-fieldset legend="Velho Testamento" [toggleable]="true" class="content">
+            <p-carousel [value]="booksBiblia" [numVisible]="3" [numScroll]="3" [style]="{width: '100%'}">
+                <div *ngIf="booksBiblia && booksBiblia.length > 0">
+                    <div class="box-carousel" *ngFor="let book of booksBiblia">
+                        <div class="card">
+                            <div class="content-span">
+                                <span>Autor: {{ book.author }}</span>
+                                <span>Capitulos: {{ book.chapters }}</span>
+                                <span>Grupo: {{ book.group }}</span>
+                                <span>Testamento: {{ book.testament }}</span>
+                            </div>
+                            <ng-template pTemplate="footer">
+                                <div class="card-footer">
+                                    <button pButton pRipple type="button" icon="pi pi-bookmark"
+                                        class="p-button-rounded p-button-secondary"></button>
+                                </div>
+                            </ng-template>
+                        </div>
+                    </div>
+                </div>
+                <div *ngIf="!booksBiblia || booksBiblia.length === 0">
+                    <p-progressSpinner></p-progressSpinner>
+                </div>
+            </p-carousel>
+        </p-fieldset>
+    </div>
+</main>

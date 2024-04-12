@@ -1,0 +1,19 @@
+<main class="box-diretivas">
+    <h1 class="titulo">Diretivas Estruturais - ngSwitch</h1>
+
+    <div class="box-texto">
+        <input type="text" [(ngModel)]="nome">
+
+        <div [ngSwitch]="nome">
+            <p *ngSwitchCase="'felipe'">
+                Felipe
+            </p>
+            <p *ngSwitchCase="'moreira'">
+                Moreira
+            </p>
+            <p *ngSwitchDefault>
+                Deu ruim sua pesquisa ... Faça uma pesquisa !!!
+            </p>
+        </div>
+    </div>
+</main>

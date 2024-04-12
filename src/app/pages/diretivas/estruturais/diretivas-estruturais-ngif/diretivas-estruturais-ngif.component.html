@@ -1,0 +1,24 @@
+<div class="box-diretivas">
+    <h1 class="titulo">Diretivas Estruturais - ngIf</h1>
+
+    <div class="box-texto">
+        <p *ngIf="condition; else elseBlock">TRUE</p>
+        <ng-template #elseBlock>
+            <p>FALSE</p>
+        </ng-template>
+    </div>
+
+    <div class="box-texto">
+        <div class="condition-click">
+            <p *ngIf="conditionClick">
+                TRUE
+            </p>
+
+            <p *ngIf="!conditionClick">
+                FALSE
+            </p>
+
+            <button class="button" (click)="onClick()">Clicar</button>
+        </div>
+    </div>
+</div>
