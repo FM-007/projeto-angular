@@ -16,4 +16,12 @@
         justify-content: center;
         padding: 30px;
     }
+
+    @media (max-width: 768px) {
+        .box-content {
+            .content1 {
+                padding: 10px; // Ajusta o padding do conteúdo para telas menores
+            }
+        }
+    }
 }

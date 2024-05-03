@@ -8,3 +8,9 @@
     padding: 7px;
     border-right: 1px solid rgba($color: #fff, $alpha: 0.1);
 }
+
+@media screen and (max-width: 768px) {
+    .menu {
+        width: 100%;
+    }
+}

@@ -1,12 +1,29 @@
 .app {
     display: grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
     background-color: #090524;
+    padding: 20px;
+    height: 100vh;
+    overflow: overlay;
+
+    .menu, .content {
+        width: 100%;
+    }
 }
 
 .titulo {
     font-weight: 100;
+    font-size: 1.75rem;
     letter-spacing: 3.5px;
     margin: 30px 0;
     color: rgba($color: #fff, $alpha: 0.9);
+}
+
+@media (min-width: 768px) {
+    .app {
+        grid-template-columns: 25% 75%;
+        grid-template-rows: auto;
+    }
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-menu',
@@ -9,8 +10,16 @@ import { MenuItem } from 'primeng/api';
 export class MenuComponent implements OnInit {
 
   public items!: MenuItem[];
+  public isLargeScreen: boolean = true;
 
-  constructor() { }
+  constructor(private breakpointObserver: BreakpointObserver) {
+    this.breakpointObserver.observe([
+      Breakpoints.Small,
+      Breakpoints.XSmall
+    ]).subscribe(result => {
+      this.isLargeScreen = !result.matches;
+    });
+  }
 
   ngOnInit(): void {
     this.items = [

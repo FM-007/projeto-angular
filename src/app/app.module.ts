@@ -26,6 +26,7 @@ import { CardModule } from 'primeng/card';
 import { FieldsetModule } from 'primeng/fieldset';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
 import { HomeModule } from './pages/todo-list/home/home.module';
+import {MenubarModule} from 'primeng/menubar';
 
 
 @NgModule({
@@ -57,7 +58,8 @@ import { HomeModule } from './pages/todo-list/home/home.module';
     CardModule,
     FieldsetModule,
     ProgressSpinnerModule,
-    HomeModule
+    HomeModule,
+    MenubarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

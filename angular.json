@@ -107,7 +107,7 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "base-href": "/projeto-angular/"
+            "baseHref": "/projeto-angular/"
           }
         }
       }

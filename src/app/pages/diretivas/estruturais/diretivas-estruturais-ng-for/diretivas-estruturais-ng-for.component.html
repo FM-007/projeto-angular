@@ -22,4 +22,28 @@
         </ng-template>
         <p-button label="Click" icon="pi pi-check" iconPos="left" (click)="onClickAddListDoc()"></p-button>
     </div>
+    
+    <div class="box-texto" pRipple>
+        <h3 class="titulo">Exemplo - Documentação</h3>
+        <ng-template ngFor let-item [ngForOf]="listDoc" let-i="index">
+            <ul class="lista">
+                <li (click)="onClickEventList(i)" pRipple>
+                    [ {{i}} ] - Nome: {{ item.nome }} - Idade: {{ item.idade }}
+                </li>
+            </ul>
+        </ng-template>
+        <p-button label="Click" icon="pi pi-check" iconPos="left" (click)="onClickAddListDoc()"></p-button>
+    </div>
+    
+    <div class="box-texto" pRipple>
+        <h3 class="titulo">Exemplo - Documentação</h3>
+        <ng-template ngFor let-item [ngForOf]="listDoc" let-i="index">
+            <ul class="lista">
+                <li (click)="onClickEventList(i)" pRipple>
+                    [ {{i}} ] - Nome: {{ item.nome }} - Idade: {{ item.idade }}
+                </li>
+            </ul>
+        </ng-template>
+        <p-button label="Click" icon="pi pi-check" iconPos="left" (click)="onClickAddListDoc()"></p-button>
+    </div>
 </div>
